@@ -1,1 +1,9 @@
-<p>grafica1 works!</p>
+<div class="row">
+  <div class="col-6" *ngFor="let dataSet of dataSets">
+    <component-donut-char
+      [title]="dataSet.title"
+      [labels]="dataSet.labels"
+      [dataSet]="dataSet.data"
+    />
+  </div>
+</div>
