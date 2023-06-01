@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { SharedModule } from '../shared/shared.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
@@ -18,6 +19,7 @@ import { ProgressComponent } from './progress/progress.component';
     Grafica1Component,
     PagesComponent,
     NopagefoundComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
@@ -27,5 +29,6 @@ import { ProgressComponent } from './progress/progress.component';
     PagesRoutingModule,
     SharedModule,
   ],
+  exports: [AccountSettingsComponent],
 })
 export class PagesModule {}
